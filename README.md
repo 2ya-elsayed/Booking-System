@@ -17,28 +17,28 @@ A full-stack event booking system where users can register, browse events, and m
 🛠️ **Tech Stack**
 -----------------------
 **Backend:**
-Java 17
-Spring Boot
-Spring Data JPA (Hibernate)
-REST APIs
-Oracle 
-ModelMapper / MapStruct
-Spring Security
-JWT Authentication
-Custom Exception Handling
-Admin Dashboard
+- Java 17
+- Spring Boot
+- Spring Data JPA (Hibernate)
+- REST APIs
+- Oracle 
+- ModelMapper / MapStruct
+- Spring Security
+- JWT Authentication
+- Custom Exception Handling
+- Admin Dashboard
 
 **Frontend:**
-HTML5
-CSS3
-JS
-Bootstrap
+- HTML5
+- CSS3
+- JS
+- Bootstrap
 
 ✨ **Future Improvements**
 -----------------------
-Email Notifications
-Pagination & Filtering for Events
-Deployment to Cloud Platforms
-API Documentation
-Unit & Integration Testing
-Ticket Generation
+- Email Notifications
+- Pagination & Filtering for Events
+- Deployment to Cloud Platforms
+- API Documentation
+- Unit & Integration Testing
+- Ticket Generation
