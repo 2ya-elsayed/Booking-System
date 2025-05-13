@@ -1,0 +1,13 @@
+/* Optional custom styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #message {
+    font-weight: 500;
+  }
+  
