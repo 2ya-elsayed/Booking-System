@@ -4,15 +4,15 @@ A full-stack event booking system where users can register, browse events, and m
 
 🚀 **Features**
 -----------------------
-👥 User Registration
-🔐 Secure Password Encoding
-📋 View Events
-✅ Book Events
-🚫 Prevent Duplicate Bookings
-🧾 View All User Bookings
-📦 Clean API with DTOs and Mapping
-💥 Global Exception Handling
-🧩 Custom Exceptions (Conflict, Not Found, etc.)
+- 👥 User Registration
+- 🔐 Secure Password Encoding
+- 📋 View Events
+- ✅ Book Events
+- 🚫 Prevent Duplicate Bookings
+- 🧾 View All User Bookings
+- 📦 Clean API with DTOs and Mapping
+- 💥 Global Exception Handling
+- 🧩 Custom Exceptions (Conflict, Not Found, etc.)
 
 🛠️ **Tech Stack**
 -----------------------
