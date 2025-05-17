@@ -5,10 +5,11 @@ import com.spring.boot.bookingsystem.dto.user.UserResponseDTO;
 import com.spring.boot.bookingsystem.exception.ConflictException;
 import com.spring.boot.bookingsystem.exception.NotFoundException;
 import com.spring.boot.bookingsystem.mapper.UserMapper;
+import com.spring.boot.bookingsystem.model.Role;
 import com.spring.boot.bookingsystem.model.UserModel;
 import com.spring.boot.bookingsystem.repository.UserRepository;
 import com.spring.boot.bookingsystem.service.UserService;
-import org.springframework.security.crypto.password.PasswordEncoder;
+//import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -18,12 +19,12 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
     private final UserMapper userMapper;
-    private final PasswordEncoder passwordEncoder;
+//    private final PasswordEncoder passwordEncoder;
 
-    public UserServiceImpl(UserRepository userRepository, UserMapper userMapper, PasswordEncoder passwordEncoder) {
+    public UserServiceImpl(UserRepository userRepository, UserMapper userMapper) {
         this.userRepository = userRepository;
         this.userMapper = userMapper;
-        this.passwordEncoder = passwordEncoder;
+//        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -35,8 +36,9 @@ public class UserServiceImpl implements UserService {
         }
 
         UserModel user = userMapper.toEntity(dto);
-        user.setRole("user");
-        user.setPassword(passwordEncoder.encode(dto.getPassword()));
+        user.setRole(Role.USER);
+//        user.setPassword(passwordEncoder.encode(dto.getPassword()));
+        user.setPassword(dto.getPassword());
         return userMapper.toDTO(userRepository.save(user));
     }
 
